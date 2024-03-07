@@ -65,6 +65,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 	a{
 		color: var(--white);
 		text-decoration: none;
@@ -76,10 +77,12 @@ header{
 		justify-content: flex-end;
 		font-size: clamp(1rem, 0.919rem + 0.323vw, 1.25rem);
 		gap: 10%;
+		min-width: 280px;
 		a{
 			white-space: nowrap;
 		}
 	}
+
 }
 .logo-container{
 	height: 100%;
@@ -92,7 +95,8 @@ header{
 		justify-content: center;
 		align-items: center;
 		img{
-			height: 60%;
+			height: clamp(2rem, 1.032rem + 3.871vw, 5rem);
+			max-height: 50%;
 		}
 	}
 }
@@ -148,5 +152,13 @@ main{
 			color: var(--red);
 		}
 	 }
+}
+@media only screen and (max-width: 450px) {
+	.nav-bar{
+		flex-direction: column;
+		ul{
+			justify-content: center;
+		}
+	}
 }
 
