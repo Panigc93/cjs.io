@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CJS</title>
-    <script
-        src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
-        crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
+<header id="header"></header>
+
 <body>
     <header>
         <a class="logo" href="/">
             <img src="/img/logo.svg" alt="logo" width="40px">
         </a>
         <nav>
-			<ul class="nav-menu">
-				<li><a href="blog">Artículos</a></li>
-				<li><a href="portfolio">Organización</a></li>
-				<li><a href="recursos">Contacto</a></li>
-				<li><a href="sobremi">Suscribirse</a></li>
-			</ul>
+            <ul class="nav-menu">
+                <li><a href="blog">Artículos</a></li>
+                <li><a href="portfolio">Organización</a></li>
+                <li><a href="recursos">Contacto</a></li>
+                <li><a href="sobremi">Suscribirse</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section class="title-section">
+        <h3 class="pretitle">09.03.2024 Nace</h3>
+        <section class="main-hero-section">
+            <img src="/img/cjs-logo.svg" alt="logo">
             <h1>
-                HACIA LA
-                <span>ORGANIZACIÓN </span>
-                <span>JUVENIL SOCIALISTA</span>
-            </h1>
-            <div class="arrow"></div>
-            <div class="arrow"></div>
-            <div class="arrow"></div>
-        </section>
-        <section class="subtitle-section">
-            <h2>
                 COORDINADORA JUVENIL SOCIALISTA
-            </h2>
+            </h1>
         </section>
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1H6JMphdseW9mGZq7iJljx1pFhaTnGPI&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
-        <section class="tweet-section">
-            <blockquote class="twitter-tweet" data-media-max-width="212220px">
-                <a href="https://twitter.com/EPSocialist/status/1700101268734169207?ref_src=twsrc%5Etfw"> </a>
-            </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <section class="triangles-container">
+            <div class="triangle">&#9650;</div>
+            <div class="triangle">&#9650;</div>
         </section>
     </main>
-
 </body>
+
 </html>
